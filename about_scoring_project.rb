@@ -35,7 +35,6 @@ def score(dice)
   unless dice.empty?
     dice_grouped = dice.group_by { |value| value }
     dice_grouped.each do |number, all_of_number|
-      puts 'count is ' + all_of_number.count.to_s 
       if all_of_number.count >= 3
         if number == 1
           score += 1000
